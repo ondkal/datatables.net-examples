@@ -12,7 +12,19 @@
 
     <script>
         $(document).ready(function () {
-            new DataTable('#example');
+            new DataTable('#example', {
+                layout: {
+                    top2Start: 'pageLength',
+                    top2End: 'search',
+                    topStart: 'info',
+                    topEnd: 'paging',
+                    bottomStart: 'pageLength',
+                    bottomEnd: 'search',
+                    bottom2Start: 'info',
+                    bottom2End: 'paging',
+                    bottom3End: 'pageLength'
+                }
+            });
         });
     </script>
 
@@ -20,9 +32,9 @@
 
 <body>
 
-<h1>Zero Configuration</h1>
+<h1>DOM Multiple Elements</h1>
 
-<a href="https://datatables.net/examples/basic_init/zero_configuration.html">https://datatables.net/examples/basic_init/zero_configuration.html</a>
+<a href="https://datatables.net/examples/layout/dom_multiple_elements.html">https://datatables.net/examples/layout/dom_multiple_elements.html</a>
 
 <table id="example" class="display">
         <thead>
