@@ -22,15 +22,13 @@
         $(document).ready(function () {
             new DataTable('#example', {
                 layout: {
+                    top3Start: 'search',
                     top2Start: 'pageLength',
-                    top2End: 'search',
-                    topStart: 'info',
-                    topEnd: 'paging',
-                    bottomStart: 'pageLength',
-                    bottomEnd: 'search',
+                    topStart: { buttons: ['copy', 'excel', 'pdf', 'colvis'] },
+                    topEnd: null,
+                    bottomStart: 'paging',
                     bottom2Start: 'info',
-                    bottom2End: 'paging',
-                    bottom3End: { buttons: [ 'copy', 'excel', 'pdf', 'colvis' ] }
+                    bottomEnd: null
                 }
             });
         });
